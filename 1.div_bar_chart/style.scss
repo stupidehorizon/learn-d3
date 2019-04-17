@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 30px;
+}
+
+.chart {
+  position: relative;
+  div {
+    font: 10px sans-serif;
+    background-color: steelblue;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+  }
+}
