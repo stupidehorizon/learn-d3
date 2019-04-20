@@ -1,6 +1,6 @@
 import * as d3 from 'd3';
 
-const data = [4, 8, 15, 16, 23, 42, 89, 20, 10, 4, 8];
+const data = [4, 8, 15, 16, 23, 42, 89, 20, 10, 4];
 const margin = { top: 10, right: 10, bottom: 20, left: 20 };
 const [svgChartWidth, svgChartHeight] = [300, 200];
 const [chartWidth, chartHeight] = [svgChartWidth - margin.left - margin.right, svgChartHeight - margin.top - margin.bottom];
@@ -9,7 +9,7 @@ const barPadding = 5;
 
 const xScale = d3.scaleLinear()
     .domain([0, data.length - 1])
-    .range([0, chartWidth]);
+    .range([0, chartWidth - barWidth]);
 
 const yScale = d3.scaleLinear()
     .domain([0, d3.max(data)])
@@ -43,5 +43,5 @@ svg.append('g')
     .append("rect")
     .attr("width", barWidth - barPadding  + 'px')
     .attr("height", d => chartHeight - yScale(d))
-    .attr("transform", (d, i) => `translate(${[xScale(i), yScale(d)]}), scale(1)`)
+    .attr("transform", (d, i) => `translate(${[xScale(i), yScale(d)]})`)
 
