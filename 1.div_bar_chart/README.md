@@ -6,4 +6,4 @@
 `parcel index.html`
 
 ### 预览
-![image](https://raw.githubusercontent.com/stupidehorizon/learn-d3/master/img/1.1.jpg)
+![image](https://raw.githubusercontent.com/stupidehorizon/learn-d3/master/img/1.1.png)
