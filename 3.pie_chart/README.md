@@ -9,9 +9,7 @@ parcel index.html
 ```
 
 ### 预览
-![image](https://raw.githubusercontent.com/stupidehorizon/learn-d3/master/img/2.1.png)
-
-### 踩坑
+![image](https://raw.githubusercontent.com/stupidehorizon/learn-d3/master/img/3.1.png)
 
 
 ### 参考链接
